@@ -1,8 +1,7 @@
 defaultNamespace: default
 helm:
   releaseName: cluster
-  chart: rancher-vsphere-cluster #cluster-template/rancher-vsphere-cluster
-  repo:  oci://harbor.lan.ping6.nl/helm/rancher-vsphere-cluster
+  chart: oci://harbor.lan.ping6.nl/helm/rancher-vsphere-cluster
   version: 0.1.2
   valuesFiles: 
     - values.yaml
