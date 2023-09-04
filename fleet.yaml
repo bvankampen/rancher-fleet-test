@@ -12,5 +12,4 @@ diff:
       name: cluster
       namespace: fleet-default
       jsonPointers:
-        - "/spec/rkeConfig/machinePools/0"
-        - "/spec/rkeConfig/machinePools/1"
+        - "/spec/rkeConfig/machinePools"
