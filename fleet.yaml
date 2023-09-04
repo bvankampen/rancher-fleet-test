@@ -11,6 +11,6 @@ diff:
       kind: Cluster
       name: cluster
       namespace: fleet-default
-      operations:
-        - {"op": "remove", "path": "/spec/rkeConfig/machinePools[0]"}
-        - {"op": "remove", "path": "/spec/rkeConfig/machinePools[1]"}
+      jsonPointers:
+        - "/spec/rkeConfig/machinePools/0"
+        - "/spec/rkeConfig/machinePools/1"
