@@ -5,3 +5,11 @@ helm:
   version: 0.1.2
   valuesFiles: 
     - values.yaml
+diff:
+  comparePatches:
+    - apiVersion: provisioning.cattle.io/v1
+      kind: Cluster
+      name: cluster
+      namespace: fleet-default
+      operations:
+        - {"op", "remove", "path", "/spec/rkeConfig/machinePools"}
