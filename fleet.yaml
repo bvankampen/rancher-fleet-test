@@ -5,11 +5,11 @@ helm:
   version: 0.1.3
   valuesFiles: 
     - values.yaml
-# diff:
-#   comparePatches:
-#     - apiVersion: provisioning.cattle.io/v1
-#       kind: Cluster
-#       name: cluster
-#       namespace: fleet-default
-#       operations:
-#         - {"op": "remove", "path": "/spec/rkeConfig/machinePools"}
+diff:
+  comparePatches:
+    - apiVersion: provisioning.cattle.io/v1
+      kind: Cluster
+      name: cluster
+      namespace: fleet-default
+      operations:
+        - {"op": "remove", "path": "/spec/rkeConfig/machinePools/0/dynamicSchemaSpec"}
