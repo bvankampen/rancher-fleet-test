@@ -2,7 +2,7 @@
 cluster:
   name: cluster
   kubernetesVersion: v1.26.7+rke2r1 
-cloudCredentialSecretName: "cattle-global-data:cc-9ftrv"
+cloudCredentialSecretName: "cattle-global-data:cc-86ff2"
 nodepool:
   controlplane:
   - name: test
