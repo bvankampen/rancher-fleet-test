@@ -14,4 +14,4 @@ diff:
       namespace: fleet-default
       operations:
         - {"op": "remove", "path": "/spec/rkeConfig/machinePools/0"}
-        - {"op": "remove", "path": "/spec/rkeConfig/machinePools/1"}
+        # - {"op": "remove", "path": "/spec/rkeConfig/machinePools/1"}
