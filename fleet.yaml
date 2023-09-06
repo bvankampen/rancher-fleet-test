@@ -13,5 +13,6 @@ diff:
       name: cluster
       namespace: fleet-default
       operations:
-        - {"op": "remove", "path": "/spec/rkeConfig/machinePools/0/dynamicSchemaSpec"}
-        # - {"op": "remove", "path": "/spec/rkeConfig/machinePools/1"}
+        - {"op": "remove", "path": "/spec/rkeConfig/machinePools/0/workerRole"}
+        - {"op": "remove", "path": "/spec/rkeConfig/machinePools/1/etcdRole"}
+        - {"op": "remove", "path": "/spec/rkeConfig/machinePools/1/controlPlaneRole"}
